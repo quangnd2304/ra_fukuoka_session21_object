@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Object</title>
+</head>
+
+<body>
+    <script>
+        let st1 = { "studentId": "SV001", "studentName": "Nguyễn Văn A" };
+        let st2 = st1;
+        st2.studentId = "SV002";
+        console.log("Thông tin sinh viên 1-->", st1);
+        // Clone Object
+        // Cách 1: Sử dụng Spreed của es6
+        let st3 = { "studentId": "SV001", "studentName": "Nguyễn Văn A" };
+        let st4 = { ...st3 };
+        st4.studentId = "SV002";
+        // Cách 2: Sử dụng JSON
+        let st5 = JSON.parse(JSON.stringify(st3));
+        st5.studentId = "SV003";
+        // Cách 3: Sử dụng hàm assign
+        let st6 = Object.assign({}, st3);
+        st6.studentId = "SV004";
+        console.log("Thông tin sinh viên 3--->", st3);
+    </script>
+</body>
+
+</html>

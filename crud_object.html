@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm, xóa các thuộc tính của đối tượng</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            studentId: "SV001",
+            studentName: "Nguyễn Văn A",
+            study: function () {
+                console.log("Sinh viên đang học");
+            }
+        }
+        // Thêm các thuộc tính và hành vi của đối tượng
+        student.age = 20;
+        student.studentName = "Nguyễn Văn B";
+        student.love = function () {
+            console.log("Sinh viên đang yêu");
+        }
+        // Xóa các thuộc tính và hành vi của đối tượng
+        delete student.age;
+        delete student.study;
+        // In ra thông tin sinh viên
+        console.log("Thông tin sinh viên-->", student);
+    </script>
+</body>
+
+</html>

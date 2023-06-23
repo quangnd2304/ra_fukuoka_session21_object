@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duyệt các đối tượng</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            studentId: "SV001",
+            studentName: "Nguyễn Văn A",
+            study: function () {
+                console.log("Sinh viên đang học");
+            }
+        }
+        // Duyệt đối tượng với vòng lặp for...in
+        for (const key in student) {
+            // key: tên thuộc tính của đối tượng
+            console.log(student[key]);
+        }
+    </script>
+</body>
+
+</html>

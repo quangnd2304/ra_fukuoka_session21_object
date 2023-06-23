@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm việc với đặc điểm - hành vi đối tượng</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            "studentId": "SV001",
+            "studentName": "Nguyễn Văn A",
+            "age": 20,
+            study: function () {
+                return "Sinh viên đang học";
+            }
+        };
+        // 2 cách để truy cập vào đặc điểm và hành vi của đối tượng
+        // Cách 1: Sử dụng toán tử . 
+        console.log("Mã sinh viên là: ", student.studentId);
+        console.log(student.study());;
+        // Cách 2: truy cập thông qua tên của thuộc tính
+        console.log("Tên sinh viên là:", student["studentName"]);
+        console.log("gọi hàm-->", student["study"]);
+    </script>
+</body>
+
+</html>
